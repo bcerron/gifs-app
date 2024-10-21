@@ -1,0 +1,13 @@
+<div class="d-flex flex-row flex-wrap mb-3 gap-3">
+  <div *ngFor="let gif of gifs" class="card" style="width: 13rem">
+    <img
+      [src]="gif.images.downsized_medium.url"
+      [alt]="gif.title"
+      class="card-img-top"
+      alt=""
+    />
+    <div class="card-body">
+      <p class="card-text">{{ gif.title }}</p>
+    </div>
+  </div>
+</div>
